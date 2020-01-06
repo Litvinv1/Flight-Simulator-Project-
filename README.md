@@ -13,9 +13,8 @@ clion program for the code in c++.
 2. Add the generic_small.xml to the file /data/Protocol directory where you installed the simulator
 3. Reat down the following settings in the 'Settings' tab in the simulator:
 
---telnet=socket,in,10,127.0.0.1,5402,tcp
-
---generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
+  --telnet=socket,in,10,127.0.0.1,5402,tcp
+  --generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
 
 This commands will open two communication sockets - 'in' where you send commands to the simulator, and 'out' where you receive data from it.
 
