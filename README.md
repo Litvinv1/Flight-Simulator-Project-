@@ -56,7 +56,7 @@ Declare a while loop by calling while e1 [condition] e2 { loop content }
 Declare an if condition by calling if e1 [condition] e2 { if content }
 
 
-## More 
+## More:
 github link- https://github.com/shechty2/Flight-Simulator-Project-/tree/master
 
 
