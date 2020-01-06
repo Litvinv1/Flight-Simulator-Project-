@@ -32,8 +32,29 @@ and then:
 ./a.out fly.txt
 
 ## Interpreter code structure
+# Command-
+The Command class is a interface class that contain execute function that we will run for all the command class.
+# OpenServerCommand-
+This command class opens a thread in which we open and run such as server. Our simulator connects to the server as client and sends requests. Each requests contain the values of the airplane. Our server accepts the requests and updates the database accordingly.
+# ConnectCommand-
+This command class opens a thread in which we open and run such a client. We act as a client who sends requests to the simulator. Every time we get a new command for the simulator from the code we are sending it to the simulator as a request through this client.
+# Lexer-
+This class is reading the fly.text and return the commands into the file split.
+# Variables- 
+we can assign variables to only get data from the simulator using <-, or also update their value inside the simulator using ->.
+We can also assign local variables that aren't connected to the simulator itself using regular var x = 'value'. 
+Every variable declaration has to start with the var keyword.
+# Print-
+We use the keyword Print(variable or string value) to print something to the screen.
+# Sleep-
+we use the keyword Sleep(integer value) to make the main thread sleep for the requested amount of time in milliseconds.
+# While loop-
+Declare a while loop by calling while e1 [condition] e2 { loop content }
+# If loop-
+Declare an if condition by calling if e1 [condition] e2 { if content }
 
 
-
+## More 
+github link- 
 
 
