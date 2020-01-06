@@ -30,7 +30,7 @@ The code is designed to read line after line of commands entered in a terminal f
 
 and then:
 
-      ./a.out fly.txt
+     ./a.out fly.txt
 
 ## Interpreter code structure:
 ## Command-
