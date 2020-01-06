@@ -1,14 +1,14 @@
 # Flight Simulator
 by Vadim Litvinov & Yuval Shechter
 
-## Description
+## Description:
 This project is Interpreter for a FlightGear flight simulator. The program connects to the simulator and flys the aircraft based on the user's command that provide from the "fly.txt".
 
-## Prerequisites
+## Prerequisites:
 Linux environment to run the code.
 clion program for the code in c++.
 
-## Installing Instructions
+## Installing Instructions:
 1. Download and install the simulator to your computer - https://www.flightgear.org/download/
 2. Add the generic_small.xml to the file /data/Protocol directory where you installed the simulator
 3. Reat down the following settings in the 'Settings' tab in the simulator:
@@ -17,7 +17,7 @@ clion program for the code in c++.
 
 This commands will open two communication sockets - 'in' where you send commands to the simulator, and 'out' where you receive data from it.
 
-## Running
+## Running:
 1. Exceute the code using the terminal. The program will wait for a connection from the simulator, you will see "Server is now listening..."
 2. Click the 'Fly!' icon in the simulator flight in the bottom left corner and wait for the simulator to load. It will connect to the interpreter in the meantime.
 
@@ -31,10 +31,10 @@ and then:
 
 ./a.out fly.txt
 
-## Interpreter code structure
+## Interpreter code structure:
 ## Command-
 The Command class is a interface class that contain execute function that we will run for all the command class.
-# OpenServerCommand-
+## OpenServerCommand-
 This command class opens a thread in which we open and run such as server. Our simulator connects to the server as client and sends requests. Each requests contain the values of the airplane. Our server accepts the requests and updates the database accordingly.
 ## ConnectCommand-
 This command class opens a thread in which we open and run such a client. We act as a client who sends requests to the simulator. Every time we get a new command for the simulator from the code we are sending it to the simulator as a request through this client.
