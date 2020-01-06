@@ -12,7 +12,6 @@ clion program for the code in c++.
 1. Download and install the simulator to your computer - https://www.flightgear.org/download/
 2. Add the generic_small.xml to the file /data/Protocol directory where you installed the simulator
 3. Reat down the following settings in the 'Settings' tab in the simulator:
-
   --telnet=socket,in,10,127.0.0.1,5402,tcp
   --generic=socket,out,10,127.0.0.1,5400,tcp,generic_small
 
