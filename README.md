@@ -23,9 +23,9 @@ This commands will open two communication sockets - 'in' where you send commands
 
 The code is designed to read line after line of commands entered in a terminal from the user once the program has started running. 
 
-3. In the terminal, run te foolowing command:
+3. In the terminal, run the foolowing command:
 
-g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
+ g++ -std=c++14 *.cpp -Wall -Wextra -Wshadow -Wnon-virtual-dtor -pedantic -o a.out -pthread
 
 and then:
 
@@ -35,14 +35,15 @@ and then:
 ## Command-
 The Command class is a interface class that contain execute function that we will run for all the command class.
 ## OpenServerCommand-
-This command class opens a thread in which we open and run such as server. Our simulator connects to the server as client and sends requests. Each requests contain the values of the airplane. Our server accepts the requests and updates the database accordingly.
+This command class opens a thread in which we open and run tcp server. Our simulator connects to the server as client and sends requests. Each requests contain the values of the airplane. Our server accepts the requests and updates the database accordingly.
 ## ConnectCommand-
-This command class opens a thread in which we open and run such a client. We act as a client who sends requests to the simulator. Every time we get a new command for the simulator from the code we are sending it to the simulator as a request through this client.
+This command class opens a thread in which we open and run tcp client. We act as a client who sends requests to the simulator. Every time we get a new command for the simulator from the code we are sending it to the simulator as a request through this client.
 ## Lexer-
 This class is reading the fly.text and return the commands into the file split.
 ## Variables- 
-we can assign variables to only get data from the simulator using <-, or also update their value inside the simulator using ->.
-We can also assign local variables that aren't connected to the simulator itself using regular var x = 'value'. 
+we can assign variables to only get data from the simulator using <-,
+or also update their value inside the simulator using ->.
+We can also assign local variables that aren't connected to the simulator itself using regular var z = 'value'. 
 Every variable declaration has to start with the var keyword.
 ## Print-
 We use the keyword Print(variable or string value) to print something to the screen.
