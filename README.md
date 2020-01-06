@@ -5,8 +5,8 @@ by Vadim Litvinov & Yuval Shechter
 This project is Interpreter for a FlightGear flight simulator. The program connects to the simulator and flys the aircraft based on the user's command that provide from the "fly.txt".
 
 ## Prerequisites:
-Linux environment to run the code.
-clion program for the code in c++.
+-Linux environment to run the code.
+-clion program for the code in c++.
 
 ## Installing Instructions:
 1. Download and install the simulator to your computer - https://www.flightgear.org/download/
